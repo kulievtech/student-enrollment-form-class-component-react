@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+form,
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.form-inputs,
+.edit-inputs {
+    display: flex;
+    gap: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-inputs input,
+.form-inputs select,
+.edit-inputs input,
+.edit-inputs select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-inputs input[type="submit"] {
+    background-color: #1c89ff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-inputs span {
+    color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e5e5e5;
+}
+
+.edit-btn {
+    background-color: #04aa6d;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 15px;
+}
+
+.main-delete-btn {
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+button {
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.action-buttons {
+    display: flex;
+}
+
+.cancel-btn,
+.delete-btn {
+    float: left;
+    width: 20%;
+}
+
+.cancel-btn {
+    background-color: #ccc;
+    color: black;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.confirm-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-modal {
+    padding: 16px;
+    text-align: center;
+}
+
+.delete-modal h1 {
+    margin-bottom: 40px;
+}
+
+.confirm-buttons::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.edit-cancel-btn {
+    background-color: #1c89ff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.edit-update-btn {
+    background-color: #04aa6d;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid;
 }
