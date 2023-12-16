@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.css";
 import React from "react";
 import { v4 as uuid } from "uuid";
 
@@ -185,7 +185,6 @@ class App extends React.Component {
 
         for (const student of this.state.students) {
             if (student.id === studentId) {
-                console.log(student);
                 firstName = student.firstName;
                 lastName = student.lastName;
                 emailAddress = student.emailAddress;
